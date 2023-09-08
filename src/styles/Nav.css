@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Work+Sans:wght@300&display=swap');
+  .nav{
+    border: 1px solid black;
+    max-width: 18%;
+    height: 100vh;
+    border-radius: 0rem 2rem 2rem 0rem;
+background: #292929;
+}
+.logo{
+    color: white;
+    font-family: 'Pacifico';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.logodiv{
+    display: flex;
+    padding: 1.5rem 0 1rem 2.5rem;
+    align-items: center;
+    gap: 1rem;
+}
+ul{
+    padding: 0;
+}
+.tabcontainer{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.active{
+    background: #F30050;
+}
+.tab:hover{
+    background: #F30050;
+    transition: all 0.4s ease;
+}
+.tab{
+    display: flex;
+    align-items: center; 
+    padding: 1.5rem 2.5rem ;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.tabText{
+color:  #F7F9F9;
+font-family: 'Work Sans';
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.75rem;
+}
+.tabs{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+.tabIcon{
+    /* width: 1rem; */
+}
+.socialIconContainer{
+    padding: 1.5rem 2.5rem ;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.socialIcon{
+    color: #F30050;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}

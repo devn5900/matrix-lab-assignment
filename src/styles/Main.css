@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap');
+.main{
+    border:  1px solid white;
+    width: 82%;
+   
+}
+.mainNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+.mainNav>div>div>input{
+    outline: none;
+    padding: 0.5rem 4.5rem 0.5rem 1rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    background: linear-gradient(95deg, rgba(124, 15, 53, 0.20) 4.79%, rgba(88, 18, 102, 0.20) 100%);
+}
+.mainNav>div>div{
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+border: 1px solid #FFF;
+}
+.searchIcon{
+    color: white;
+    padding: 0.6rem 0.7rem 0.6rem 1rem;
+    cursor: pointer;   
+    font-size: 1.2rem;
+    background: linear-gradient(95deg, rgba(124, 15, 53, 0.20) 4.79%, rgba(88, 18, 102, 0.20) 100%);
+
+}
+.connectBtn{
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(95deg, #7C0F35 7.59%, #581266 104.01%);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.title{
+    color:  #F7F9F9;
+font-family: Work Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.75rem;
+}
+
+.result{
+    padding: 1rem 2.5rem;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3;
+}
+.cardItem{
+    display: grid;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    grid-template-columns: repeat(4,1fr);
+}
+.cardChild{
+    border-radius: 0.625rem;
+    background: #390554;
+    color: white;
+    padding: 0.5rem;
+    position: relative;
+    margin-left: 0.3rem;
+font-family: Poppins;
+    margin-right: 0.3rem;
+}
+
+.cardChild h1{
+color: #FFF;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+padding: 1.3rem 0 0.2rem 0.7rem;
+
+}
+.cardChild div{
+color: #F5F5F5;
+font-family: Poppins;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: left;
+}
+.cardTextCon{
+    display: flex;
+    align-items: center;
+    padding: 0rem 0 1.3rem 0.7rem;
+}
+.cardTextCon div:nth-child(2){
+    margin-left: 1.5rem;
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+}
+.cardText span{
+    margin-top: 0.5rem;
+}
+.cardIcon{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+.cardIcon svg{ 
+    fill: #960252;
+    background: #960252;
+    padding: 1rem;
+    border-radius: 50%;
+}
