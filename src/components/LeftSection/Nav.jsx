@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "../../styles/Nav.css";
+import {AiOutlineClose}  from 'react-icons/ai'
 import {FaFacebookSquare,FaLinkedin,FaTwitterSquare} from 'react-icons/fa'
 import { TogglerContext } from "../context/TogglerProvider";
 const Nav = () => {
-  const {toggle,setToggle} = useContext(TogglerContext);
+  const {toggle,setToggle,sidebar,setSidebar} = useContext(TogglerContext);
   return (
-    <div className="nav">
+    <div className={`nav ${sidebar?"navOpen":""}`}>
       <div className="logodiv">
         <span>
           <svg
@@ -22,8 +23,10 @@ const Nav = () => {
           </svg>
         </span>
         <span className="logo">NFTify</span>
+        <span onClick={()=>setSidebar(false)} className="close"><AiOutlineClose/></span>
       </div>
       <div className="tabs">
+       
         <div>
           <ul  className="tabcontainer">
             <li className={`tab ${toggle?"active":""}`} onClick={()=>setToggle(true)}>

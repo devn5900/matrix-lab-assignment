@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import {BiSearch} from 'react-icons/bi'
 import { fetchData } from '../../utils/api'
+import {RxHamburgerMenu} from 'react-icons/rx'
 import { TogglerContext } from '../context/TogglerProvider'
 import Card from './Card'
 const Main = ({title,url}) => {
     const [load,setLoad]= useState(false);
-    const {toggle}= useContext(TogglerContext);
+    const {toggle,setSidebar,sidebar}= useContext(TogglerContext);
     const [data,setData]= useState([]);
     const [search,setSearch]= useState("");
     useEffect(()=>{
@@ -29,6 +30,10 @@ const Main = ({title,url}) => {
     <div className='main'>
         <div className='mainNav'>
             <div>
+                <span onClick={()=>setSidebar(true)} className='open'><RxHamburgerMenu/></span>
+        <span className="logo">NFTify</span>
+            </div>
+            <div>
                 <div>
                 <input type='text' placeholder='Search' onChange={(e)=>setSearch(e.target.value)} />
                 <BiSearch className='searchIcon' onClick={handleSearch} />
@@ -43,11 +48,11 @@ const Main = ({title,url}) => {
             <div className='cardContainer'>
                 {
                     data&&data.length>0&&data.map((el,i)=>{
-                        return i<12?<Card key={i} {...el} />:null 
+                        return i<3?<Card key={i} {...el} />:null 
                     })
                 }
                 {
-                    load&&<div>
+                    load&&<div style={{color:'white'}}>
                         Loading.....
                     </div>
                 }

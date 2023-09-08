@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap');
 .main{
-    border:  1px solid white;
     width: 82%;
    
 }
@@ -130,3 +129,71 @@ text-align: left;
     padding: 1rem;
     border-radius: 50%;
 }
+
+ /* small desktop  */
+ @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .main{
+        width: 100%;
+        margin: auto;
+    }
+ }
+
+/* mobile  */
+@media (max-width: 700.98px) { 
+    .mainNav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        gap: 1rem;
+       }
+       .mainNav>div span:first-child{
+        position: absolute;
+        left: 3rem;
+    }
+    .cardItem{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .result{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .cardContainer{
+        width: 100%;
+        margin: auto;
+    }
+ }
+
+ /* tablet  */
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .mainNav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        gap: 1rem;
+       }
+       .mainNav>div span:first-child{
+        position: absolute;
+        left: 3rem;
+    }
+    .cardItem{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .result{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .cardContainer{
+        width: 100%;
+        margin: auto;
+    }
+  }
+
+ 
